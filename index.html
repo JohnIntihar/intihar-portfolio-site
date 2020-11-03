@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"> <!-- UTF-8 replaced ASCII for encoding all characters on the web -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- "The width should equal the device width, whatever that is." Initial-scale sets the initial zoom level of the site; set at just normal 100% currently. "Viewport" just refers to the visible area of the web page and lets us take control of that. -->
+
+  <title>John Intihar</title>
+
+  <meta content="" name="description"> <!-- Input description for search engines in the content area here -->
+  <!-- <meta content="" name="keywords"> Don't bother using this. Outdated. Search engines don't use the "keywords" tag in their web search rankings anymore. -->
+
+  <script src="https://kit.fontawesome.com/1a26d7a643.js" crossorigin="anonymous"></script>
+
+  <link href="style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/browser-tab-favicon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+                                                          <!-- Start Scroll Code -->
+  <header id="home">
+
+    <!-- navbar -->
+    <nav id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">Home</a>
+            </li>
+            <li>
+              <a href="#projects" class="scroll-link">Projects</a>
+            </li>
+            <li>
+              <a href="#resume" class="scroll-link">Resume</a>
+            </li>
+            <li>
+              <a href="#about-me" class="scroll-link">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- banner -->
+    <div class="banner">
+      <div class="title-container">
+        <h1 id='title-name'>John Intihar</h1>
+        <h3 id='subtitle'>Finance Professional turning Software Developer.</h3>
+        <p>
+          <br><br>
+          <span id='contact-span'>Contact:</span><br>
+          215.532.5657<br>
+          intihar.john@gmail.com<br>
+
+          <div class='social-links'>
+            <i id='fa-linkedin' class="fab fa-linkedin fa-3x"></i>
+            <i id='fa-github' class="fab fa-github-square fa-3x"></i>
+            <i id='fa-youtube' class="fab fa-youtube-square fa-3x"></i>
+          </div>
+
+        </p>
+        <a href="#projects" class="scroll-link btn btn-white">View Projects</a>
+      </div>
+    </div>
+    
+  </header>
+  <!-- Below 'divider' div simply extra white space for aesthetics above the "My Projects" section -->
+  <div id="divider"></div>
+
+<!-- *************** PROJECTS SECTION *************** -->
+  <section id="projects" class="section">
+    <div class="title project-section">
+      <h2>My <span>Projects</span></h2>
+    </div>
+
+    <div class="project-cards">
+
+        <div class="card card-gilded-investment-tips">
+          <h3 class='card-title'>Gilded Investing Tips</h3>
+          <p class='card-text'>My first project, built on the concept of returning investment product recommendations based on user input.</p>
+          <a href="https://github.com/JohnIntihar/gildedinvestmenttips" target='_blank' class="btn link-button code-button-gilded-investment-tips">Link to Code</a>
+          <a href="https://romantic-fermi-4b3ed3.netlify.app/" target='_blank' class="btn link-button project-button-gilded-investment-tips">Link to Live Version</a>
+        </div>
+
+  
+
+        <div class="card card-responsive-website">
+          <h3>Responsive Website</h3>
+          <p class='card-text'>Guided project for building a modern, responsive website, utilizing Grid, Flexbox, animations, media queries, and modern design principles.</p>
+          <a href="https://github.com/JohnIntihar/responsive-modern-website" target='_blank' class="btn link-button code-button-responsive-website">Link to Code</a>
+          <a href="https://elastic-villani-e4c899.netlify.app/" target='_blank' class="btn link-button project-button-responsive-website">Link to Live Version</a>
+        </div>
+ 
+
+      <div class="card card-menu-items">
+        <h3>Restaurant Menu</h3>
+        <p class='card-text'>Guided project for creating a menu for an online restaurant; focused on utilizing JavaScript to create, change, filter, and concatenate an array.</p>
+        <a href="https://github.com/JohnIntihar/menu-items" target='_blank' class="btn link-button code-button-menu-items">Link to Code</a>
+          <a href="https://tender-tereshkova-e81cad.netlify.app/" target='_blank' class="btn link-button project-button-menu-items">Link to Live Version</a>
+      </div>
+
+    </div>
+ 
+
+  </section>
+  
+
+
+<!-- *************** RESUME SECTION *************** -->
+  <section id="resume" class="section">
+    <div class="title">
+      <h2>My <span>Resume</span></h2>
+    </div>
+
+
+      <div class="resume-banner">
+        <button class="btn modal-btn">
+          View Resume
+        </button>
+      </div>
+
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <embed src="img/dev-resume.pdf" type="application/pdf" class='resume'>
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- *************** ABOUT ME SECTION *************** -->
+  <section id="about-me" class="section">
+    <div class="title">
+      <h2>About <span>Me</span></h2>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+  <footer class="section">
+    <p>
+      John Intihar
+      <span id="date"></span>.
+    </p>
+  </footer>
+  <a class="top-link" href="#home">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </a>
+                                                          <!-- End Scroll Code -->
+
+
+  <script src='main.js'></script>
+</body>
+</html>
