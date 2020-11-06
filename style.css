@@ -207,6 +207,12 @@ header {
   margin: 4px 7px;
 }
 
+#codewars-icon{
+  margin: 4px 7px;
+  margin-bottom: -2px;
+  height: 41px;
+}
+
 .scroll-link{
   margin-top: 10px;
   font-size: 28px;
