@@ -232,6 +232,10 @@ header {
   margin: 4px 7px;
 }
 
+.social-links a{
+  color: var(--color-primary);
+}
+
 .scroll-link{
   margin-top: 10px;
   font-size: 28px;
