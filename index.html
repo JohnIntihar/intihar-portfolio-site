@@ -13,24 +13,25 @@
   <script src="https://kit.fontawesome.com/1a26d7a643.js" crossorigin="anonymous"></script>
 
   <link href="style.css" rel="stylesheet">
+  <link href="mediaqueries.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/browser-tab-favicon.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-                                                          <!-- Start Scroll Code -->
+<!-- *************** HOME SECTION *************** -->
   <header id="home">
 
-    <!-- navbar -->
+
     <nav id="nav">
       <div class="nav-center">
-        <!-- nav header -->
+
         <div class="nav-header">
           <button class="nav-toggle">
             <i class="fas fa-bars"></i>
           </button>
         </div>
 
-        <!-- links -->
+
         <div class="links-container">
           <ul class="links">
             <li>
@@ -49,7 +50,7 @@
         </div>
       </div>
     </nav>
-    <!-- banner -->
+
     <div class="banner">
       <div class="title-container">
         <h1 id='title-name'>John Intihar</h1>
@@ -93,7 +94,7 @@
   
 
         <div class="card card-responsive-website">
-          <h3>Responsive Website</h3>
+          <h3 class='card-title'>Responsive Website</h3>
           <p class='card-text'>Guided project for building a modern, responsive website, utilizing Grid, Flexbox, animations, media queries, and modern design principles.</p>
           <a href="https://github.com/JohnIntihar/responsive-modern-website" target='_blank' class="btn link-button code-button-responsive-website">Link to Code</a>
           <a href="https://elastic-villani-e4c899.netlify.app/" target='_blank' class="btn link-button project-button-responsive-website">Link to Live Version</a>
@@ -101,7 +102,7 @@
  
 
       <div class="card card-menu-items">
-        <h3>Restaurant Menu</h3>
+        <h3 class='card-title'>Restaurant Menu</h3>
         <p class='card-text'>Guided project for creating a menu for an online restaurant; focused on utilizing JavaScript to create, change, filter, and concatenate an array.</p>
         <a href="https://github.com/JohnIntihar/menu-items" target='_blank' class="btn link-button code-button-menu-items">Link to Code</a>
         <a href="https://tender-tereshkova-e81cad.netlify.app/" target='_blank' class="btn link-button project-button-menu-items">Link to Live Version</a>
@@ -156,7 +157,7 @@
           <img src="./img/about-me.png" alt="about picture">
         </article>
         <article class='about'>
-          <!-- btn container -->
+
           <div class="btn-container">
             <button class='tab-btn' data-id='reason-for-pivot'>Reason for Pivot</button>
             <button class='tab-btn' data-id='learning-approach'>Learning Approach</button>
@@ -164,55 +165,37 @@
           </div>
           <article class="about-content">
 
-            <!-- single item -->
             <div class="content active" id="reason-for-pivot">
-              <h4>Reason for Pivot</h4>
-              <p>
-                I'm baby wolf pickled schlitz try-hard normcore marfa man bun mumblecore vice
-                pop-up XOXO lomo kombucha glossier bicycle rights. Umami kinfolk salvia jean
-                shorts offal venmo. Knausgaard tilde try-hard, woke fixie banjo man bun. Small
-                batch tumeric mustache tbh wayfarers 8-bit shaman chartreuse tacos. Viral
-                direct trade hoodie ugh chambray, craft beer pork belly flannel tacos
-                single-origin coffee art party migas plaid pop-up.
-              </p>
+                <li>
+                  Highly-transferable skillset from Corporate Finance. Becoming an advanced Excel user with formulas and macros lends itself well to thinking in terms of coding languages. Also, concepts of empathizing with end-users and utilizing proper design principles relating to executive and senior leadership presentations carry over well to designing web pages and applications. I want to leverage these transferable skills to make a positive impact.
+                </li>
+                  <br>
+                <li>
+                  Seeking a new challenge. Software is a dynamic field that is consistently being updated with new concepts to internalize. That speaks directly to my pursuit of learning and self-development.
+                </li>
+                  <br>
+                <li>
+                  Strategically positioning my career trajectory to take advantage of the global environment. The workforce is adapting to technology at an accelerated rate due to working from home, caused by the COVID lockdown measures. It's increasingly important for the workforce to attract skillful Software Developers, and I want to contribute.
+                </li>
             </div>
-            <!-- end of single item -->
-            
-            <!-- single item -->
+
             <div class="content" id="learning-approach">
-              <h4>Learning Approach</h4>
               <p>
-                Man bun PBR&B keytar copper mug prism, hell of helvetica. Synth crucifix offal
-                deep v hella biodiesel. Church-key listicle polaroid put a bird on it
-                chillwave palo santo enamel pin, tattooed meggings franzen la croix cray.
-                Retro yr aesthetic four loko tbh helvetica air plant, neutra palo santo tofu
-                mumblecore. Hoodie bushwick pour-over jean shorts chartreuse shabby chic. Roof
-                party hammock master cleanse pop-up truffaut, bicycle rights skateboard
-                affogato readymade sustainable deep v live-edge schlitz narwhal.
+                I am completely self-taught. My learning approach consisted of starting with general tutorials and moving on to a mix of project-based learning and improving upon tutorial code. Utilizing online and printed resources, I have progressed from my first real line of code to being competent at Front-End Development and can design a website from scratch using modern design concepts.
+                <br><br>
+                To date, my skillset includes:
+                <br><br>
+                <span id='languages'>HTML CSS CSS-Grid CSS-Flexbox JavaScript</span>
               </p>
-              <ul>
-                <li>list item</li>
-                <li>list item</li>
-                <li>list item</li>
-              </ul>
             </div>
-            <!-- end of single item -->
-            
-            <!-- single item -->
+
             <div class="content" id="about-me-general">
-              <h4>General About Me</h4>
               <p>
-                Chambray authentic truffaut, kickstarter brunch taxidermy vape heirloom four
-                dollar toast raclette shoreditch church-key. Poutine etsy tote bag, cred
-                fingerstache leggings cornhole everyday carry blog gastropub. Brunch biodiesel
-                sartorial mlkshk swag, mixtape hashtag marfa readymade direct trade man braid
-                cold-pressed roof party. Small batch adaptogen coloring book heirloom.
-                Letterpress food truck hammock literally hell of wolf beard adaptogen everyday
-                carry. Dreamcatcher pitchfork yuccie, banh mi salvia venmo photo booth quinoa
-                chicharrones.
+                From my home in Minnesota and my college years in Wisconsin, my career journey has allowed me to experience Charlotte, Philadephia, and Charlotte again. Throughout these years, much of my time outside of work has been spent on learning and development, especially regarding studying for the Chartered Financial Analyst and Chartered Alternative Investment Analyst exams. I accumulated several licenses and certifications along the way (Series 7 license, Financial Modeling and Valuation Analyst certification, etc.).
+                <br><br>
+                Beyond that, I enjoy spending my time exploring the many local breweries, playing tennis, hiking periodically, cooking, watching movies (huge Iron Man fan!), and generally experiencing as much of life as I can.
               </p>
             </div>
-            <!-- end of single item -->
   
           </article>
         </article>
@@ -232,9 +215,9 @@
         <div class="img-container">
           <img src="./person-1.jpeg" id='person-img' alt="">
         </div>
-        <h4 id="author">sara jones</h4>
-        <p id="job">ux designer</p>
-        <p id="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime odit blanditiis consequuntur esse aperiam numquam sapiente ipsum eius soluta culpa.
+        <h4 id="author"></h4>
+        <p id="job"></p>
+        <p id="info">
         </p>
         <div class="button-container">
           <button class="prev-btn">
@@ -252,28 +235,17 @@
 </div>
 </section>
 
-
-
-
-
-
-
-
-
-
-
 <!-- *************** FOOTER SECTION *************** -->
-  <footer class="section">
+  <footer class='footer'>
     <p>
       John Intihar
       <span id="date"></span>
     </p>
   </footer>
+
   <a class="top-link" href="#home">
     <i class="fa fa-chevron-up" aria-hidden="true"></i>
   </a>
-                                                          <!-- End Scroll Code -->
-
 
   <script src='main.js'></script>
 </body>

@@ -1,13 +1,10 @@
 
-
 :root {
   --color-primary: rgb(60, 32, 90);
   --color-secondary: rgb(115, 138, 176);
   --transition: all 0.3s linear;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  --max-width: 1170px;
-  --fixed-width: 620px;
 }
 
 html {
@@ -20,11 +17,13 @@ html {
   margin: 0;
   padding: 0;
 }
+
 body {
   font-size: 11px;
   background-color: white;
   font-family: 'Poppins', sans-serif;
 }
+
 ul {
   list-style-type: none;
 }
@@ -49,6 +48,23 @@ a {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  body {
+    font-size: 12px;
+  }
+}
 
 .btn {
   background: transparent;
@@ -63,20 +79,26 @@ a {
   position: relative;
   place-items: center;
 }
+.btn:hover {
+  background: white;
+  color: var(--color-secondary);
+}
+
 
 .btn-white {
   color: white;
   border-radius: 0;
   padding: 8px 16px;
 }
-.btn:hover {
-  background: white;
-  color: var(--color-secondary);
+@media screen and (max-width: 800px){
+  .btn-white{
+    padding: 0;
+  }
 }
 
 #nav {
-  background: rgb(60, 32, 90, .7);
-  padding: 25px 10px;
+  background: transparent;
+  padding: 25px 0;
 }
 
 .fixed-nav {
@@ -84,19 +106,18 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  background: rgb(60, 32, 90, .7);
+  background: transparent;
   box-shadow: var(--light-shadow);
-}
-.fixed-nav .links a {
-  color: rgb(41, 39, 39);
-}
-.fixed-nav .links a:hover {
-  color: var(--color-secondary);
+  z-index: 2;
 }
 
-.fixed-nav .links-container {
-  height: auto !important;
+
+@media screen and (max-width: 800px){
+  .fixed-nav{
+    visibility: hidden;
+  }
 }
+
 .nav-header {
   display: flex;
   align-items: center;
@@ -107,7 +128,6 @@ a {
   color: gray;
   background: transparent;
   border-color: transparent;
-  transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
@@ -119,16 +139,21 @@ a {
   transition: var(--transition);
 }
 .show-links {
-  height: 200px;
+  height: 100px;
 }
 .links a {
   background: transparent;
-  color: rgb(90, 89, 89);
-  font-size: 17.6px;
+  color: darkgray;
+  font-size: 16px;
   letter-spacing: 4px;
   transition: var(--transition);
   font-weight: bold;
-  padding: 12px 0;
+}
+
+@media screen and (max-width: 800px){
+  .links a{
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 800px) {
@@ -207,12 +232,6 @@ header {
   margin: 4px 7px;
 }
 
-#codewars-icon{
-  margin: 4px 7px;
-  margin-bottom: -2px;
-  height: 41px;
-}
-
 .scroll-link{
   margin-top: 10px;
   font-size: 28px;
@@ -221,7 +240,7 @@ header {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .title-container p {
     max-width: 640px;
   }
@@ -262,6 +281,12 @@ header {
     'card1 card2 card3'
     'card4 card5 card6'
 }
+@media screen and (max-width: 800px){
+  .project-cards{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .card{
   border: 5px solid black;
@@ -281,16 +306,25 @@ header {
 }
 
 .card-text{
-  padding: 20px;
+  padding: 15px;
+}
+@media screen and (max-width: 800px){
+  .card{
+    height: auto;
+  }
 }
 
 .card-title{
-  margin-top: 15px;
+  margin: 15px;
 }
 
 .card h3,
 .card p{
   color: black;
+}
+
+.card a{
+  margin: 1px;
 }
 
 .card-gilded-investment-tips::before{
@@ -328,13 +362,23 @@ header {
 }
 
 .link-button{
-  margin: auto;
+  margin: 0 auto;
   font-weight: bold;
   letter-spacing: 2px;
   font-size: 18px;
   padding: 12px 24px;
+  position: relative;
+  bottom: 0;
 }
-
+@media screen and (max-width: 800px){
+  .link-button{
+    margin: 0 auto;
+    font-weight: bold;
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+  }
+}
 
 
 /************************ RESUME DETAILS ************************/
@@ -393,6 +437,7 @@ header {
   height: 95vh;
   text-align: center;
   display: grid;
+  grid-template-rows: 12fr 1fr;
   place-items: center;
 }
 .close-btn {
@@ -417,6 +462,14 @@ header {
   gap: 15px;
   margin: 0 50px;
 }
+@media screen and (max-width: 800px){
+  .about-me-container{
+    margin: 5px;
+  }
+  .endorsements-title{
+    margin-top: 30px;
+  }
+}
 
 .about-me-endorsements{
   margin: 0 auto 60px auto;
@@ -431,7 +484,7 @@ header {
   object-fit: cover;
   margin: 0;
 }
-@media screen and (min-width: 992px) {
+
   .about-img {
     margin: 0;
   }
@@ -444,7 +497,7 @@ header {
     grid-template-columns: 1fr 2fr;
     column-gap: 50px;
   }
-}
+
 .about {
   display: grid;
   grid-template-rows: auto 1fr;
@@ -465,7 +518,7 @@ header {
   border-top-right-radius: 8px;
 }
 .tab-btn {
-  padding: 16px 0;
+  padding: 16px 5px;
   border: 1px solid white;
   font-size: 24px;
   color: black;
@@ -473,13 +526,18 @@ header {
   cursor: pointer;
   transition: ease-out .5s;
 }
+@media screen and (max-width: 800px){
+  .tab-btn{
+    font-size: 16px;
+  }
+}
 .tab-btn:hover:not(.active) {
   background: rgb(115, 138, 176, .5);;
 }
 .about-content {
   padding: 20px 10px;
 }
-/* hide content */
+
 .content {
   display: none;
 }
@@ -488,6 +546,13 @@ header {
 }
 .content.active {
   display: block;
+}
+
+#languages{
+  font-size: 40px;
+  word-spacing: 20px;
+  font-weight: bold;
+  color: gray;
 }
 
 /************************ ENDORSEMENTS ************************/
@@ -500,6 +565,12 @@ header {
   border-radius: 8px;
   box-shadow: var(--dark-shadow);
   text-align: center;
+  width: 95vw;
+}
+@media screen and (max-width: 800px){
+  .review{
+    width: 85vw;
+  }
 }
 
 .img-container {
@@ -548,7 +619,6 @@ header {
 }
 
 
-
 /************************ FOOTER ************************/
 footer {
   background: gray;
@@ -559,6 +629,12 @@ footer p {
   text-align: center;
   letter-spacing: 4px;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 1375px) {
+  footer {
+    visibility: hidden;
+  }
 }
 
 .top-link {
@@ -577,7 +653,7 @@ footer p {
   visibility: hidden;
   z-index: -100;
 }
-.show-link {
+.show-top-link {
   visibility: visible;
   z-index: 100;
 }
@@ -593,5 +669,3 @@ footer p {
     transform: scale(1);
   }
 }
-
-
