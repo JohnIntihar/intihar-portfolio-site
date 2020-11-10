@@ -108,19 +108,19 @@ const reviews = [
     name: "Lukas Van Houten",
     job: "Senior Full-Stack Software Developer",
     img:
-      "https://source.unsplash.com/random",
+      "./img/lukasvanhouten.png",
     text:
-      "John dec, yo. Straight bitchin'.",
+      "John's impact at PMMC was far-reaching and highly-visible; the broader organization was exposed to his level of skill in monthly company-wide presentations, where the content was indicative of mindful design principles and were easy to understand.",
   },
 
   {
     id: 2,
-    name: "Michael P",
+    name: "Michael Pritchard",
     job: "Accountant",
     img:
-      "https://source.unsplash.com/random",
+      "./img/michaelpritchard.png",
     text:
-      "John good work",
+      "John's consistent work ethic and proficiency in using Excel, both from technical and end-user experience perspectives, provided unique support to the senior leadership team and elevated Finance at PMMC.",
   },
 
   // {

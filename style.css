@@ -180,9 +180,9 @@ a {
   }
   .links a {
     background: transparent;
-    color: darkgray;
+    color: rgb(24, 22, 22);
     font-size: 20px;
-    transition: var(--transition);
+    transition: all 0.2s ease-in;
     margin: 0 25px;
   }
   .links a:hover {
@@ -213,6 +213,7 @@ header {
   width: 800px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.9);
   padding: 20px;
+  border-radius: 8px;
   backdrop-filter: blur(4px);
   background: rgba(255, 255, 255, 0.1);
 }
@@ -272,7 +273,7 @@ header {
   height: 850px;
 }
 #resume {
-  background: rgba(211, 211, 211, 0.1);
+  background: rgba(211, 211, 211, 0.4);
 }
 
 /************************ PROJECTS DETAILS ************************/
@@ -416,7 +417,7 @@ header {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(73, 166, 233, 0.5);
+  background: rgba(255, 255, 255, 0.5);
   display: grid;
   place-items: center;
   transition: all 0.3s linear;
@@ -454,7 +455,7 @@ header {
   transition: all 0.3s linear;
 }
 .close-btn:hover {
-  color: red;
+  color: rgb(165, 17, 17);
   transform: scale(1.2);
 }
 
@@ -463,7 +464,6 @@ header {
 
 .about-me-container{
   display: grid;
-  grid-template-rows: 1fr 1fr;
   gap: 15px;
   margin: 0 50px;
 }
@@ -509,7 +509,13 @@ header {
   background-color: rgba(211, 211, 211, 0.2);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+  box-shadow: var(--light-shadow);
 }
+
+.about-img img{
+  box-shadow: var(--light-shadow);
+}
+
 .btn-container {
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -529,7 +535,7 @@ header {
   color: black;
   background: linear-gradient(to right bottom, rgba(211, 211, 211, 0.5), rgb(115, 138, 176, .9));
   cursor: pointer;
-  transition: ease-out .5s;
+  transition: ease-out 1.5s;
 }
 @media screen and (max-width: 800px){
   .tab-btn{
@@ -537,7 +543,7 @@ header {
   }
 }
 .tab-btn:hover:not(.active) {
-  background: rgb(115, 138, 176, .5);;
+  background: rgb(115, 138, 176, .5);
 }
 .about-content {
   padding: 20px 10px;
