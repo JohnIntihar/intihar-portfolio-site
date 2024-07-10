@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8"> <!-- UTF-8 replaced ASCII for encoding all characters on the web -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"> <!-- "The width should equal the device width, whatever that is." Initial-scale sets the initial zoom level of the site; set at just normal 100% currently. "Viewport" just refers to the visible area of the web page and lets us take control of that. -->
+
+  <title>John Intihar</title>
+
+  <meta content="" name="description"> <!-- Input description for search engines in the content area here -->
+  <!-- <meta content="" name="keywords"> Don't bother using this. Outdated. Search engines don't use the "keywords" tag in their web search rankings anymore. -->
+
+  <script src="https://kit.fontawesome.com/1a26d7a643.js" crossorigin="anonymous"></script>
+
+  <link href="style.css" rel="stylesheet">
+  <link href="mediaqueries.css" rel="stylesheet">
+  <link rel="shortcut icon" href="img/browser-tab-favicon.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- *************** HOME SECTION *************** -->
+  <header id="home">
+
+
+    <nav id="nav">
+      <div class="nav-center">
+
+        <div class="nav-header">
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+
+
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">HOME</a>
+            </li>
+            <li>
+              <a href="#projects" class="scroll-link">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#resume" class="scroll-link">RESUME</a>
+            </li>
+            <li>
+              <a href="#about-me" class="scroll-link">ABOUT ME</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner">
+      <div class="title-container">
+        <h1 id='title-name'>John Intihar</h1>
+        <h3 id='subtitle'>Aspiring Data Analyst</h3>
+        <p>
+          <br><br>
+          <span id='contact-span'>Contact:</span>
+          <br>704.620.0369<br>
+          intihar.john@gmail.com<br>
+
+          <div class='social-links'>
+            <a href="https://www.linkedin.com/in/john-intihar-4b872b83/" target='_blank'><i id='fa-linkedin' class="fab fa-linkedin fa-3x"></i></a>
+            <a href="https://github.com/JohnIntihar" target='_blank'><i id='fa-github' class="fab fa-github-square fa-3x"></i></a>
+          </div>
+
+        </p>
+        <a href="#projects" class="scroll-link btn btn-lightgrey">View Projects</a>
+      </div>
+    </div>
+    
+  </header>
+  <!-- Below 'divider' div simply extra white space for aesthetics above the "My Projects" section -->
+  <div id="divider"></div>
+
+<!-- *************** PROJECTS SECTION *************** -->
+  <section id="projects" class="section">
+    <div class="title project-section">
+      <h2>My <span>Projects</span></h2>
+    </div>
+
+    <div class="project-cards">
+
+        <div class="card card-gilded-investment-tips">
+          <h3 class='card-title'>Gilded Investing Tips</h3>
+          <p class='card-text'>My first project, built on the concept of returning investment product recommendations based on user input.</p>
+          <a href="https://github.com/JohnIntihar/gildedinvestmenttips" target='_blank' class="btn link-button code-button-gilded-investment-tips">Link to Code</a>
+          <a href="https://romantic-fermi-4b3ed3.netlify.app/" target='_blank' class="btn link-button project-button-gilded-investment-tips">Link to Live Version</a>
+        </div>
+
+  
+
+        <div class="card card-artist-site">
+          <h3 class='card-title'>Artist Site Template</h3>
+          <p class='card-text'>Designed website template for artists to show off their works.</p>
+          <a href="https://github.com/JohnIntihar/artist-template" target='_blank' class="btn link-button code-button-artist-site">Link to Code</a>
+          <a href="https://nostalgic-mccarthy-688b1d.netlify.app/" target='_blank' class="btn link-button project-button-artist-site">Link to Live Version</a>
+        </div>
+ 
+
+      <!-- <div class="card card-menu-items">
+        <h3 class='card-title'>Restaurant Menu</h3>
+        <p class='card-text'>Guided project for creating a menu for an online restaurant; focused on utilizing JavaScript to create, change, filter, and concatenate an array.</p>
+        <a href="https://github.com/JohnIntihar/menu-items" target='_blank' class="btn link-button code-button-menu-items">Link to Code</a>
+        <a href="https://tender-tereshkova-e81cad.netlify.app/" target='_blank' class="btn link-button project-button-menu-items">Link to Live Version</a>
+      </div> -->
+
+    </div>
+ 
+
+  </section>
+  
+
+
+<!-- *************** RESUME SECTION *************** -->
+  <section id="resume" class="section">
+    <div class="title">
+      <h2>My <span>Resume</span></h2>
+    </div>
+
+
+      <div class="resume-banner">
+        <button class="btn modal-btn">
+          VIEW RESUME
+        </button>
+      </div>
+
+    <div class="modal-overlay">
+      <div class="modal-container">
+        <embed src="img/dev-resume.pdf" type="application/pdf" class='resume'>
+        <button class="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- *************** ABOUT ME SECTION *************** -->
+  <section id="about-me" class="section">
+    <div class="title">
+      <h2>About <span>Me</span></h2>
+    </div>
+
+  
+<div class="about-me-container">
+
+  <div class="about-me-information">
+
+
+
+      <div class="about-center section-center">
+        <article class='about-img'>
+          <img src="./img/about-me.png" alt="about picture">
+        </article>
+        <article class='about'>
+
+          <div class="btn-container">
+            <button class='tab-btn' data-id='reason-for-pivot'>Reason for Pivot</button>
+            <button class='tab-btn' data-id='learning-approach'>Learning Approach</button>
+            <button class='tab-btn' data-id='about-me-general'>General About Me</button>
+          </div>
+          <article class="about-content">
+
+            <div class="content active" id="reason-for-pivot">
+                <li>
+                  Highly-transferable skillset from Corporate Finance. Becoming an advanced Excel user with formulas and macros lends itself well to thinking in terms of coding languages. Also, concepts of empathizing with end-users and utilizing proper design principles relating to executive and senior leadership presentations carry over well to designing web pages and applications. I want to leverage these transferable skills to make a positive impact.
+                </li>
+                  <br>
+                <li>
+                  Seeking a new challenge. Software is a dynamic field that is consistently being updated with new concepts to internalize. That speaks directly to my pursuit of learning and self-development.
+                </li>
+                  <br>
+                <li>
+                  Strategically positioning my career trajectory to take advantage of the global environment. The workforce is adapting to technology at an accelerated rate due to working from home, caused by the COVID lockdown measures. It's increasingly important for the workforce to attract skillful Software Developers, and I want to contribute.
+                </li>
+            </div>
+
+            <div class="content" id="learning-approach">
+              <p>
+                I am completely self-taught. My learning approach consisted of starting with general tutorials and moving on to a mix of project-based learning and improving upon tutorial code. Utilizing online and printed resources, I have progressed from my first real line of code to being competent at Front-End Development and can design a website from scratch using modern design concepts.
+                <br><br>
+                To date, my skillset includes:
+                <br><br>
+                <span id='languages'>HTML CSS CSS-Grid CSS-Flexbox JavaScript</span>
+              </p>
+            </div>
+
+            <div class="content" id="about-me-general">
+              <p>
+                From my home in Minnesota and my college years in Wisconsin, my career journey has allowed me to experience Charlotte, Philadephia, and Charlotte again. Throughout these years, much of my time outside of work has been spent on learning and development, especially regarding studying for the Chartered Financial Analyst and Chartered Alternative Investment Analyst exams. I accumulated several licenses and certifications along the way (Series 7 license, Financial Modeling and Valuation Analyst certification, etc.).
+                <br><br>
+                Beyond that, I enjoy spending my time exploring the many local breweries, playing tennis, hiking periodically, cooking, watching movies (huge Iron Man fan!), and generally experiencing as much of life as I can.
+              </p>
+            </div>
+  
+          </article>
+        </article>
+      </div>
+  </div>
+
+
+  <div class="about-me-endorsements">
+    
+
+
+      <div class="endorsements-title">
+        <h3>Endorsements</h3>
+      </div>
+
+      <article class="review">
+        <div class="img-container">
+          <img src="./person-1.jpeg" id='person-img' alt="">
+        </div>
+        <h4 id="author"></h4>
+        <p id="job"></p>
+        <p id="info">
+        </p>
+        <div class="button-container">
+          <button class="prev-btn">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="next-btn">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </article>
+
+
+  </div>
+
+</div>
+</section>
+
+<!-- *************** FOOTER SECTION *************** -->
+  <footer class='footer'>
+    <p>
+     Website designed by: John Intihar,
+      <span id="date"></span>
+    </p>
+  </footer>
+
+  <a class="top-link" href="#home">
+    <i class="fa fa-chevron-up" aria-hidden="true"></i>
+  </a>
+
+  <script src='main.js'></script>
+</body>
+</html>
